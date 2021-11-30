@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  min-height: 100%;
+}
+.max-width {
+  max-width: 1150px;
+  margin: auto;
+}
+
+/*Navbar*/
+.navbar {
+  background: black;
+  width: 100%;
+  padding: 20px;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 28px;
+  letter-spacing: -1px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+}
+.spotify {
+  font-size: 36px;
+  margin-right: 5px;
+  color: #fff;
+}
+.navbar-container ul {
+  list-style: none;
+}
+.line {
+  background-color: #fff;
+  width: 1px;
+  height: 13px;
+}
+.navbar-container li {
+  display: inline-block;
+  margin-left: 25px;
+  font-weight: 600;
+}
+.nav-links span {
+  color: #d9dadc;
+}
+.navbar-container li a {
+  color: #fff;
+  text-decoration: none;
+}
+.navbar-container li a:hover {
+  color: #1ed760;
+}
+.navbar-container li a span:hover {
+  color: #1ed760;
+}
+.hamburger {
+  cursor: pointer;
+  color: #fff;
+  font-size: 25px;
+  display: none;
+}
+
+/*Navbar*/
+
+/*Main*/
+.main {
+  height: 900px;
+  background: url(images/background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 900px;
+}
+
+.text-container h3 {
+  color: #1ed760;
+  font-size: 135px;
+  line-height: 166px;
+  max-width: 694px;
+  margin-bottom: 40px;
+  letter-spacing: -5px;
+}
+
+.text-container p {
+  color: #1ed760;
+  margin-bottom: 45px;
+}
+
+.btn {
+  text-decoration: none;
+  color: #2941ab;
+  background: #1ed760;
+  padding: 13px 27px;
+  border-radius: 50px;
+  font-weight: 530;
+  font-size: 15px;
+}
+.btn:hover {
+  font-size: 16px;
+  padding: 12px 26px;
+}
+
+/*Main*/
+
+/*Footer*/
+.footer {
+  height: 500px;
+  background: black;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 90px;
+  color: #fff;
+}
+.link-container {
+  display: flex;
+  justify-content: space-around;
+}
+.link {
+  margin: 40px;
+}
+.link-container h3 {
+  color: #919496;
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+.link-container ul {
+  list-style: none;
+}
+.link-container li a {
+  color: #fff;
+  text-decoration: none;
+}
+.link-container li {
+  margin-top: 20px;
+}
+.link-container li a:hover {
+  color: #1ed760;
+}
+
+.footer__socials a {
+  color: #fff;
+}
+
+.footer__socials {
+  text-align: center;
+}
+.footer__socials i {
+  margin: 10px;
+  background-color: #222326;
+  width: 50px;
+  height: 50px;
+  border-radius: 200px;
+  line-height: 50px;
+  font-size: 23px;
+}
+.footer__socials i:hover {
+  color: #1ed760;
+}
+/*Footer*/
+
+/*Responsive*/
+@media (max-width: 991px) {
+  .line {
+    width: 13px;
+    height: 1px;
+  }
+  .navbar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hamburger {
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+  }
+  .navbar-container ul {
+    width: 100%;
+  }
+  .navbar-container li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 21px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-links.active {
+    display: block;
+  }
+}
+@media (max-width: 1200px) {
+  .text-container h3 {
+    font-size: 100px;
+    max-width: 500px;
+    line-height: 130px;
+  }
+  .text-container p {
+    max-width: 400px;
+  }
+  .max-width {
+    max-width: 900px;
+  }
+
+  .footer {
+    height: auto;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .spotifyFooter {
+    margin-left: 55px;
+  }
+  .footer__socials {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 765px) {
+  .link-container {
+    flex-wrap: wrap;
+  }
+  .link {
+    width: 100%;
+  }
+  .spotifyFooter {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .text-container h3 {
+    font-size: 50px;
+    max-width: 220px;
+    line-height: 90px;
+    font-weight: 600;
+  }
+  .text-container p {
+    max-width: 400px;
+  }
+}
+
+/*Responsive*/
